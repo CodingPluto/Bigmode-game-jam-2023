@@ -9,7 +9,7 @@ find_package(SDL2 REQUIRED)
 
 add_executable(OurGame "src/main.cpp")
 target_link_libraries(OurGame SDL2::SDL2 SDL2::SDL2main)
-target_include_directories(OurGame   PUBLIC include)
+target_include_directories(OurGame PUBLIC include)
 
 
 add_custom_command(TARGET OurGame POST_BUILD
