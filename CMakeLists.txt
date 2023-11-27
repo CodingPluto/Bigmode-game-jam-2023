@@ -10,3 +10,9 @@ find_package(SDL2 REQUIRED)
 add_executable(OurGame "src/main.cpp")
 target_link_libraries(OurGame SDL2::SDL2 SDL2::SDL2main)
 target_include_directories(OurGame   PUBLIC include)
+
+
+add_custom_command(TARGET OurGame POST_BUILD
+  COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_RUNTIME_DLLS:OurGame> $<TARGET_FILE_DIR:OurGame>
+  COMMAND_EXPAND_LISTS
+  )
