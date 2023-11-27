@@ -1,6 +1,9 @@
 #include <iostream>
 #include <my_header.h>
 #include <SDL.h>
+#include <visual_data.h>
+#include <renderer.h>
+
 int main(int argc, char *argv[]){
   std::cout << "Here is my Test Program with a number of: " << a << std::endl;
 
@@ -12,6 +15,7 @@ int main(int argc, char *argv[]){
 
   SDL_Window* win = SDL_CreateWindow("Test", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 500, 500, 0);
   SDL_Renderer* sdl2_rend = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED);
+
 
   bool run = true;
   while (run)
