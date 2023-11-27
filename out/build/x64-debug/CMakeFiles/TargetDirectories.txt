@@ -1,3 +1,0 @@
-C:/Users/Chris/source/repos/Bigmode-game-jam-2023/out/build/x64-debug/CMakeFiles/OurGame.dir
-C:/Users/Chris/source/repos/Bigmode-game-jam-2023/out/build/x64-debug/CMakeFiles/edit_cache.dir
-C:/Users/Chris/source/repos/Bigmode-game-jam-2023/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
