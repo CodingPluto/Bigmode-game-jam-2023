@@ -28,3 +28,24 @@ int main(int argc, char *argv[]){
 
   return 0;
 }
+
+/*
+struct imageData
+{
+  texture image;
+  int x, y;
+  float size;
+  unsigned int z_order;
+};
+
+
+void pass_to_renderer(texture image, int x, int y, unsigned int z_order)
+{
+  std::vector<imageData>.emplace_back()
+}
+
+class Player 
+{
+  SDL_image ima
+
+};*/

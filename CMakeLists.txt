@@ -4,6 +4,7 @@ project ("BigModeGameJam2023")
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_PREFIX_PATH "lib/SDL2")
 set(CMAKE_MODULE_PATH "lib/SDL2/cmake/sdl2-config.cmake")
+set(CMAKE_COMPILE_WARNING_AS_ERROR OFF)
 find_package(SDL2 REQUIRED)
 
 
