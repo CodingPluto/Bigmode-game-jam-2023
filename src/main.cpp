@@ -6,22 +6,22 @@ int main(int argc, char *argv[]){
 
   if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
     std::cout << "SDL not initalised properly. Error: \n" << SDL_GetError() << std::endl;
-    throw "SDL not initalised, quitting program.";
+    //throw "SDL not initalised, quitting program.";
   }
+  
 
-
-  SDL_Window* win = SDL_CreateWindow("Test", 0, 0, 500, 500, 0);
+  SDL_Window* win = SDL_CreateWindow("Test", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 500, 500, 0);
   SDL_Renderer* renderer = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED);
 
-  bool game_running = true;
-  while (game_running)
+  bool run = true;
+  while (run)
   {
     SDL_Event event;
     while (SDL_PollEvent(&event))
     {
-      if (event.type == )
+      if (event.type == SDL_QUIT)
       {
-
+          run = false;
       }
     }
   }
